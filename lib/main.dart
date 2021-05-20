@@ -89,7 +89,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                   TextField(
                     decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.indigo,
+                    //fillColor: Colors.indigo,
                     labelText: 'Username',
                 ],//fin de widget
               ),//fin de columna 
