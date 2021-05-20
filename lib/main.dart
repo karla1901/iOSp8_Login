@@ -123,13 +123,14 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                               acceso = true;
                             });
                           },
-                        ), //fin de raisedButton
-                      ], //fin de widget
-                    ), //fin de row
-                  ), //fin de Padding
-                ], //fin de widget
-              ), //fin de columna
-               else
+                        ), // fin risebutton
+                      ], // fin de niños widget []
+                    ), // fin niño row
+                  ) //fin paddind
+                ], // fin de widget []
+              ) //fin clumna
+            // if verdadero
+            else
               Center(
                 child: Column(
                   children: <Widget>[
@@ -146,9 +147,9 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                   ], //fin de niños widget []
                 ),
               ) // if falso
-          ], //fin de children widget
-        ), //fin de child listView
-      ), //fin de area segura
-    ); //fin de Scaffold
-  } //fin de widget build
-} //fin class _IngresoSistemaState
+          ], // fin de widgets
+        ), //fin de lisView
+      ), // Area segura
+    ); // fin de sacaffold
+  } //fin de widget
+} // fin class _IngresoSistemaState
