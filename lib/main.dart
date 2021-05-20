@@ -79,7 +79,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
             SizedBox(height: 80.0),
             Column(
               children: <Widget>[
-                Image.asset('assets/diamond.png'),
+                Image.asset('assets/image36.jpg'),
                 SizedBox(height: 16.0),
               ],
             ),
@@ -134,10 +134,10 @@ class _IngresoSistemaState extends State<IngresoSistema> {
               Center(
                 child: Column(
                   children: <Widget>[
-                    Text('YAY, Estoy Ingresando!'),
+                    Text('YAY, Ingresaste!'),
                     RaisedButton(
                       elevation: 20.0,
-                      child: Text('Cerrar sesion'),
+                      child: Text('Cerrar sesión'),
                       onPressed: () {
                         setState(() {
                           acceso = false;
