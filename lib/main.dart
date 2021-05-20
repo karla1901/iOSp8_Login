@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Log In',
-       theme: ThemeData(
+      theme: ThemeData(
         brightness: Brightness.light,
         primarySwatch: Colors.deepPurple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -83,14 +83,14 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                 SizedBox(height: 16.0),
               ],
             ),
-            if(!acceso)
+            if (!acceso)
               Column(
                 children: <Widget>[
                   TextField(
                     decoration: InputDecoration(
-                    filled: true,
-                    //fillColor: Colors.indigo,
-                    labelText: 'Usuario',
+                      filled: true,
+                      //fillColor: Colors.indigo,
+                      labelText: 'Usuario',
                     ),
                   ),
                   SizedBox(height: 12.0),
@@ -101,9 +101,34 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                     ),
                     obscureText: true,
                   ),
-                ],//fin de widget
-              ),//fin de columna 
-            
+                  Padding(
+                    padding: const EdgeInsets.only(top: 18.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        FlatButton(
+                          child: Text('CANCELAR'),
+                          onPressed: () {
+                            setState(() {
+                              acceso = false;
+                            });
+                          },
+                        ), //fin de flatButton
+                        RaisedButton(
+                          child: Text(
+                            'SIGUIENTE',
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              acceso = true;
+                            });
+                          },
+                        ), //fin de raisedButton
+                      ], //fin de widget
+                    ), //fin de row
+                  ) //fin de Padding
+                ], //fin de widget
+              ), //fin de columna
           ], //fin de children widget
         ), //fin de child listView
       ), //fin de area segura
