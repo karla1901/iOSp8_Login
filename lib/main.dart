@@ -127,6 +127,22 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                       ], //fin de widget
                     ), //fin de row
                   ) //fin de Padding
+                  Center(
+                child: Column(
+                  children: <Widget>[
+                    Text('YAY, entré!'),
+                    RaisedButton(
+                      elevation: 20.0,
+                      child: Text('Cerrar seción'),
+                      onPressed: () {
+                        setState(() {
+                          acceso = false;
+                        });
+                      },
+                    )
+                  ],
+                ),
+                )
                 ], //fin de widget
               ), //fin de columna
           ], //fin de children widget
