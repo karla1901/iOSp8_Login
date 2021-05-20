@@ -91,6 +91,8 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                     filled: true,
                     //fillColor: Colors.indigo,
                     labelText: 'Username',
+                    ),
+                  ),
                 ],//fin de widget
               ),//fin de columna 
             
